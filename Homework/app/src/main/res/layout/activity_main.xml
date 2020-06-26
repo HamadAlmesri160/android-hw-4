@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    android:gravity="center"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:fontFamily="serif"
+        android:text="@string/grade_calculator"
+        android:paddingStart="12sp"
+        android:background="@drawable/my_text"
+        android:textSize="30sp"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/quiz"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_height="40dp"
+        android:background="@drawable/my_textedit"
+        android:ems="10"
+        android:hint="@string/quizes_15"
+        android:paddingStart="12sp"
+        android:inputType="number"
+        tools:ignore="RtlSymmetry"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/homework"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/my_textedit"
+        android:ems="10"
+        android:layout_marginTop="15dp"
+        android:hint="@string/homework_25"
+        android:inputType="number"
+        android:paddingStart="12sp"
+        android:autofillHints=""
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/midterm"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+
+        android:ems="10"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/my_textedit"
+        android:hint="@string/mid_terms_30"
+        android:inputType="number"
+        android:paddingStart="12sp"
+        android:autofillHints=""
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/finall"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:paddingStart="12sp"
+        android:ems="10"
+        android:background="@drawable/my_textedit"
+        android:hint="@string/final_30"
+        android:inputType="number"
+        android:autofillHints=""
+        tools:ignore="RtlSymmetry" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="60dp"
+        android:layout_height="55dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/calculate"
+            android:layout_width="152dp"
+            android:layout_height="49dp"
+
+            android:background="@drawable/my_button_bg"
+            android:text="Calculate It!!" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/my_textedit"
+            android:text="reset" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/grade"
+        android:layout_width="255dp"
+        android:layout_height="30dp"
+        android:text="Enter the requirements to get your grade"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/my_textview"
+        android:clickable="false"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:lineHeight="10sp" />
+
+</LinearLayout>
